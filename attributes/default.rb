@@ -24,3 +24,7 @@ default['redis']['daemonize']    = "yes"
 default['redis']['timeout']      = "300"
 default['redis']['loglevel']     = "notice"
 default['redis']['password']     = nil
+
+default['redis']['master'] = nil
+# default['redis']['master']['host'] = nil
+# default['redis']['master']['port'] = nil
