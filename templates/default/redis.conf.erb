@@ -76,7 +76,7 @@ dir /var/lib/redis
 # different interval, or to listen to another port, and so on.
 #
 <% if node['redis']['master'] %>
-slaveof <%=node['redis']['master']['host']%> <%= node['redis']['master']['port'] ? node['redis']['master']['port'] : node['redis']['password'] %>
+slaveof <%=node['redis']['master']['host']%> <%= node['redis']['master']['port'] ? node['redis']['master']['port'] : node['redis']['port'] %>
 <% end %>
 
 # If the master is password protected (using the "requirepass" configuration
